@@ -39,9 +39,9 @@ export interface DefenceOptions {
 }
 
 /**
- * A defender's bonuses against `attacker` (or against any attacker, `null`), as the multipliers that apply in order,
- * each named after what gives it: the square's, then the first of the city's walls or being fortified (they don't
- * stack). An aircraft gets none. A ship gets none, except in a walled city, where it defends as a land unit does.
+ * Civilization's defence model (civ1-unit's). A defender's bonuses against `attacker` (or against any attacker,
+ * `null`), as the multipliers that apply in order, each named after what gives it: the square's, then the first of the
+ * city's walls or being fortified (they don't stack). An aircraft gets none. A ship gets none, except in a walled city, where it defends as a land unit does.
  */
 export const defenceMultipliers =
   (
