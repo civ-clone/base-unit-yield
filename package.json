@@ -1,6 +1,6 @@
 {
   "name": "@civ-clone/base-unit-yield",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A ruleset's unit yield rules from its numbers (stats, a veteran's modifier, transport capacity), and the shape of its defence bonuses.",
   "repository": "git@github.com:civ-clone/base-unit-yield.git",
   "keywords": [
