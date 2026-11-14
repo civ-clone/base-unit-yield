@@ -1,0 +1,49 @@
+{
+  "name": "@civ-clone/base-unit-yield",
+  "version": "0.1.0",
+  "description": "A ruleset's unit yield rules from its numbers (stats, a veteran's modifier, transport capacity), and the shape of its defence bonuses.",
+  "repository": "git@github.com:civ-clone/base-unit-yield.git",
+  "keywords": [
+    "typescript",
+    "civilization"
+  ],
+  "author": "dom111 <dom111@users.noreply.github.com>",
+  "license": "MIT",
+  "private": false,
+  "files": [
+    "lib/*.js",
+    "lib/*.d.ts",
+    "lib/*.js.map"
+  ],
+  "scripts": {
+    "build": "npm run ts:compile && npm run prettier:format",
+    "prettier:check": "prettier --config .prettierrc --check '**/*.ts'",
+    "prettier:format": "prettier --config .prettierrc '**/*.ts' --write",
+    "test": "ts-mocha ./tests/*.test.ts",
+    "ts:compile": "tsc --build tsconfig.json"
+  },
+  "devDependencies": {
+    "@civ-clone/base-unit-type-land": "^0.1.0",
+    "@types/chai": "^4.0.0",
+    "@types/mocha": "^10.0.0",
+    "@types/node": "^16.0.0",
+    "chai": "^4.0.0",
+    "mocha": "^10.0.0",
+    "prettier": "^2.8.8",
+    "ts-mocha": "^10.0.0",
+    "typescript": "^4.9.5"
+  },
+  "dependencies": {
+    "@civ-clone/base-unit-trait-ignores-fortifications": "^0.1.0",
+    "@civ-clone/base-unit-type-air": "^0.1.0",
+    "@civ-clone/base-unit-type-naval": "^0.1.0",
+    "@civ-clone/core-city": "^0.1.19",
+    "@civ-clone/core-city-improvement": "^0.1.5",
+    "@civ-clone/core-rule": "^0.1.9",
+    "@civ-clone/core-unit": "^0.1.31",
+    "@civ-clone/core-unit-improvement": "^0.1.0",
+    "@civ-clone/core-unit-transport": "^0.1.8",
+    "@civ-clone/core-world": "^0.1.0",
+    "@civ-clone/core-yield": "^0.1.0"
+  }
+}
